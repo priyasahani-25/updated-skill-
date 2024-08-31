@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    background-color: rgba(205, 219, 191, 0.936);
+    height: 15vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    
+}
+.navlist li a{
+    text-decoration: none;
+    position: relative;
+    
+}
+.navlist li:hover{
+    color: #bc5151;
+    border-bottom: 3px solid #bc5151 ;
+    text-shadow: 0 0 25px rgba(83, 56, 56, 0.86),
+                 0 0 50px rgba(83, 41, 41, 0.925);
+    transform: scale(1.1);
+}
+.left-container , .right-container{
+    align-items: center;
+}
+
+
+.left-container{
+    height: 100vh;
+    background-color: rgba(245, 245, 220, 0.858);
+    width: 70%;
+    padding-left: 4rem;
+    align-items:center;
+    margin-top: 7rem;
+    
+    
+}
+.right-container{
+    height: 100vh;
+    background-color: rgba(66, 12, 12, 0.986);
+    width: 30%;
+    align-items:center;
+    margin-top: 7rem;
+    
+}
+
+.content{
+    margin-left: 4rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+.content h2{
+    font-size: 2rem;
+    
+}
+.content span{
+    color: rgba(218, 156, 156, 0.925);
+}
+.content span:hover{
+    color:rgba(218, 156, 156, 0.925) ;
+    text-shadow: 0 0 25px rgba(218, 156, 156, 0.925),
+                 0 0 50px rgba(173, 92, 92, 0.925);
+    transform: scale(1.1);
+}
+.content p{
+    font-size: 1.5rem;
+    color: rgb(13, 13, 13);
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+   
+}
+.content h3{
+    font-size: 1.8rem;
+}
+.btn-content button{
+    border: .1rem solid #bc5151;
+    font-size: 1.1rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    background-color:#bc5151;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.btn-content button:hover{
+    background-color: transparent;
+    color:#bc5151 ;
+}
+
+.design .oval{
+    position: absolute;
+    border-radius: 50%;
+    top: 60%;
+    left: 70%;
+    transform: translate(-50% , -50%);
+}
+.oval:nth-child(1){
+    background-color: rgba(245, 245, 220, 0.858) ;
+    width: 22rem;
+    height: 30rem;
+}
+.oval:nth-child(2){
+    background-image: url("image/web.jfif");
+    width: 18rem;
+    height: 28rem;
+    background-size: 100%;
+}
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background-color: #bc5151;
+    width: 100%;
+    height: .1rem;
+}
+.skills h3{
+    align-items: center;
+    font-size: 2.5rem;
+    margin-left: 6rem;
+}
+.skills h3:hover{
+    color: #bc5151;
+    
+    text-shadow: 0 0 25px rgba(83, 56, 56, 0.86),
+                 0 0 50px rgba(83, 41, 41, 0.925);
+    transform: scale(1.1);
+}
+.skills li{
+     align-items:center ;
+     font-size: 1.8rem;
+     margin-left: 6rem;
+     line-height: 2.8rem;
+}
+.contact h3{
+    margin-left: 6rem;
+    font-size: 2rem;
+    
+}
+.contact h3:hover{
+    color: #bc5151;
+   
+    text-shadow: 0 0 25px rgba(83, 56, 56, 0.86),
+                 0 0 50px rgba(83, 41, 41, 0.925);
+    transform: scale(1.1);
+}
+.contact h4{
+    margin-left: 6rem;
+    font-size: 1rem;
+    margin: 1.1rem 6rem 2.5rem 2rem;
+}
+.contact{
+    background-color: rgba(205, 219, 191, 0.936);
+    height: 50vh;
+    width: 50%;
+}
+.skills{
+    background-color: rgba(245, 245, 220, 0.858);
+    height: 50vh;
+    width: 50%;
+}
+.skills li{
+    margin-top: 1rem;
+}
+.projects{
+    background-color:rgb(175, 115, 115) ;
+    width: 50%;
+    height: 50vh;
+}
+.projects h3{
+    padding-left: 0.5rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 6rem;
+}
+.projects h3:hover{
+    color: #e0e0c6;
+   
+    text-shadow: 0 0 25px rgba(220, 213, 173, 0.885),
+                 0 0 50px rgba(222, 218, 177, 0.925);
+    transform: scale(1.1);
+}
+.projects p{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 0.5rem;
+    margin-top: 2rem;
+}
+.personal-info{
+    display: flex;
+}
+.info{
+    display: flex;
+}
+.prbtn{
+    width: 50%;
+    height: 50vh;
+    background-color: rgb(175, 115, 115);
+}
+.prbtn button{
+    border: .1rem solid #1f0101;
+    font-size: 1.1rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    background-color:rgba(245, 245, 220, 0.858);
+    cursor: pointer;
+    transition: .5s ease;
+    margin-top: 2rem;
+    margin-left: 12rem;
+}
+.prbtn button:hover{
+    background-color: transparent;
+    color:rgba(245, 245, 220, 0.858);
+}
+.text{
+    
+}
+.submit{
+    border: .1rem solid #bc5151;
+    font-size: 1.1rem;
+    padding: .8rem 1rem;
+    border-radius: .5rem;
+    background-color:#bc5151;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.submit button:hover{
+    background-color: transparent;
+    color:#bc5151 ; 
+}
